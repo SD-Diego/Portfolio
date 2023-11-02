@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/jpg" href="images/miau.jpg" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1 id="title">Portfolio de Diego 👨‍💻</h1>
+      <nav>
+        <a class="link-nav" href="#experiencia">Experiencia</a>
+        <a class="link-nav" href="#proyectos">Proyectos</a>
+        <a class="link-nav" href="https://google.com" target="_blank" rel="noreferrer">Google</a>
+      </nav>
+    </header>
+
+    <dialog id="dialog">
+      <h1>¿Sabias que puedes abrir una modal asi?</h1>
+      <p>Y es totalmente nativo</p>
+      <button id="hide">Cerrar modal</button>
+    </dialog>
+
+    <button id="show">Ver mas información</button>
+    
+    <script>
+      window.show.addEventListener("click", ()=>{
+        window.dialog.showModal()
+      })
+
+      window.hide.addEventListener("click", ()=>{
+        window.dialog.close()
+      })
+    </script>
+
+    <main>
+      <p>
+        Estudiante de la carrera de
+        <strong>Ingenieria de Sistemas Computacionales</strong> en la
+        Universidad Privada del Norte, actualmente en el 6to ciclo académico.
+      </p>
+      <h2 id="experiencia">Experiencia</h2>
+      <ul>
+        <li class="list-item">Mesero - 2019</li>
+      </ul>
+      <img
+        src="images/miau.jpg"
+        alt="Diego gato"
+        title="Foto de gato"
+        width="300"
+      />
+      <h2 id="proyectos">Proyectos Realizados</h2>
+      <aside>
+        <header>
+          <h3>Mis Tecnologías Favoritas</h3>
+        </header>
+        <ol>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JAVASCRIPT</li>
+          <li>JAVA</li>
+        </ol>
+      </aside>
+      <section>
+        <article>
+          <header>
+            <h4>Portfolio web</h4>
+          </header>
+          <p>Primer prueba de portfolio realizada el 24/10/2023</p>
+          <footer>
+            <small>Realizado con: Html, Css y Javascript</small>
+          </footer>
+        </article>
+        <article>
+          <header>
+            <h4>Galeria web</h4>
+          </header>
+          <p>
+            Desarrollo de un sitio web de entretenimiento con el fin de
+            presentar fotos
+          </p>
+          <footer>
+            <small>Realizado con: Html, Css y Javascript</small>
+          </footer>
+        </article>
+      </section>
+      <section>
+        <h2>Preguntas Frecuentes</h2>
+
+        <details>
+          <summary>¿Que estudios tienes?</summary>
+          <p>Estudie en la Universidad Privada del Norte una Ingenieria de
+            Sistemas durante 5 años </p>
+        </details>
+        <details>
+          <summary>¿Que hobbies tienes?</summary>
+          <p>Me gusta mucho escuchar música en especial el rock y el k-pop
+            tambien me gusta mucho ver el anime one piece.</p>
+        </details>
+        <details open>
+          <summary>¿Cual es tu lenguaje favorito?</summary>
+          <p>Mi lenguaje favorito actualmente es Java </p>
+        </details>
+      </section>
+      <section>
+        <h2>Formulario de contacto</h2>
+        <form action="/" method="post">
+          <fieldset>
+            <legend>Información Personal</legend>
+            <label for="name">Nombre:</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Ingrese su nombre"
+              required
+            />
+            <label>
+              Email:
+              <input type="email" name="email" placeholder="Ingrese su email" required/>
+            </label>
+          </fieldset>
+          <fieldset>
+            <legend>Información Adicional</legend>
+            <label for="phone">Teléfono:</label>
+            <input
+              type="tel"
+              name="phone"
+              id="phone"
+              placeholder="ej. 903417393"
+              required
+            />
+          </fieldset>
+          <fieldset>
+            <legend>Otros</legend>
+            <div>
+              <label for="why">¿Porque quieres contactar?</label>
+              <select name="why" id="why">
+                <option value="1">Trabajo</option>
+                <option value="2">Duda</option>
+                <option value="3">Más Información</option>
+              </select>
+            </div>
+            <div>
+              <label for="terms">¿Aceptas los terminos?</label>
+              <input type="checkbox" name="terms" id="terms">
+            </div>
+            <div>
+              <datalist id="languages">
+                <option value="Javascript"></option>
+                <option value="Python"></option>
+                <option value="Java"></option>
+                <option value="C#"></option>
+              </datalist>
+              <label>
+                ¿Con que lenguaje quieres que te ayude?
+                <input name="languages" list="languages">
+              </label>
+              
+            </div>
+          </fieldset>
+          <input type="submit" value="Enviar Contacto">
+        </form>
+      </section> 
+    </main>
+    <footer>
+      Copyright ©️ 2023 - Portfolio Diego
+      <a href="mailto:zxiteft21@gmail.com">Enviame un correo</a>
+      <a href="tel:980591729">Llamame</a>
+      <a
+        href="https://api.whatsapp.com/send?phone=980591729&text=Buenas Tardes"
+        target="_blank"
+        >Whatsapp
+      </a>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
